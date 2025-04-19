@@ -1,0 +1,119 @@
+.Header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #e8f9fd;
+}
+
+nav ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+
+.hero-section {
+  background: linear-gradient(120deg, #f8f9fa, #fff);
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.hero-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:40px;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+.text-card{
+  background-color: #e8f9fd;
+  color: black;
+  border-radius: 20px;
+  padding: 40px;
+  width: 50%;
+  max-width: 600px;    
+  min-height: 250px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.text-card h1{
+  font-size: 40px;
+  margin: 10px 0;
+}
+.text-card label{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #dcdcdc;
+  margin: 10px 0;
+}
+
+.mission-card{
+  background-color:rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+#Footer{
+  padding: 20px;
+  text-align: center;
+  background-color: #e8f9fd;
+}
+
+
+
+/* Base desktop nav */
+.nav-links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    background-color: #e8f9fd;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+
+  .nav-links.open {
+    display: block;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
